@@ -1,0 +1,22 @@
+games/
+  Kindergarten-1/
+    index.html  (placeholder or actual game file)
+    assets/     (if needed)
+  Kindergarten-2/
+    index.html
+    assets/
+  Kindergarten-3/
+    index.html
+    assets/
+  Ages-of-Conflict/
+    index.html
+    assets/
+  1v1-lol/
+    index.html
+    assets/
+  Baldis-Basics-Classic-Remastered/
+    index.html
+    assets/
+  Block-Blast/
+    index.html
+    assets/
