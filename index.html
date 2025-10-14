@@ -5,46 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Red's Game Hub</title>
 <style>
-body { font-family: Arial; background:#1e1e2f; color:#fff; text-align:center; margin:0; padding:0;}
-header {background:#282840; padding:20px;}
-header h1 {margin:0; color:#f5a623;}
-main {padding:20px;}
-ul {list-style:none; padding:0; max-width:600px; margin:0 auto;}
-li {margin:10px 0;}
-a {display:block; padding:15px; background:#3e3e5e; color:#fff; text-decoration:none; border-radius:10px; transition:0.2s;}
-a:hover {background:#f5a623; color:#000;}
-footer {text-align:center; padding:10px; background:#282840; position:fixed; bottom:0; width:100%;}
+body { font-family: Arial, sans-serif; background:#1e1e2f; color:#fff; margin:0; text-align:center; }
+header { padding:20px; background:#282840; }
+header h1 { margin:0; color:#f5a623; }
+ul { list-style:none; padding:0; max-width:600px; margin:auto; }
+li { margin:10px 0; }
+a { display:block; text-decoration:none; background:#3e3e5e; padding:15px; border-radius:10px; color:#fff; font-weight:bold; transition:0.2s;}
+a:hover { background:#f5a623; color:#000; }
+footer { text-align:center; padding:10px; background:#282840; position:fixed; bottom:0; width:100%; }
 </style>
 </head>
 <body>
-<header><h1>Red's Game Hub</h1></header>
+<header>
+  <h1>Red's Game Hub</h1>
+</header>
+
 <main>
-<ul id="game-list"></ul>
+  <ul>
+    <li><a href="games/1v1/index.html">1v1</a></li>
+    <li><a href="games/agesofconflict/index.html">Ages Of Conflict</a></li>
+    <li><a href="games/block blast/index.html">Block Blast</a></li>
+    <li><a href="games/kindergarten 1/index.html">Kindergarten 1</a></li>
+    <li><a href="games/kindergarten 2/index.html">Kindergarten 2</a></li>
+    <li><a href="games/kindergarten 3/index.html">Kindergarten 3</a></li>
+  </ul>
 </main>
+
 <footer>&copy; 2025 Red's Game Hub</footer>
-
-<script>
-const games = [
-  { folder: "Kindergarten-1", file: "Kindergarten-1.html" },
-  { folder: "Kindergarten-2", file: "Kindergarten-2.html" },
-  { folder: "Kindergarten-3", file: "Kindergarten-3.html" },
-  { folder: "Ages-of-Conflict", file: "Ages Of Conflict.html" },
-  { folder: "1v1-lol", file: "1v1.lol.html" },
-  { folder: "Baldis-Basics-Classic-Remastered", file: "Baldis Basics Classic Remastered.html" },
-  { folder: "Block-Blast", file: "Block Blast.html" }
-];
-
-const list = document.getElementById("game-list");
-
-games.forEach(game => {
-  const li = document.createElement("li");
-  const a = document.createElement("a");
-  a.href = `games/${game.folder}/${game.file}`;
-  a.textContent = game.file.replace(".html",""); // display name without extension
-  li.appendChild(a);
-  list.appendChild(li);
-});
-</script>
-
 </body>
 </html>
